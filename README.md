@@ -2,7 +2,7 @@
 
 OSRM MCP — routing via the public demo server
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
 
 ## Tools
 
@@ -11,7 +11,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 | `route` | Compute the fastest route between two or more waypoints. |
 | `table` | Distance / duration matrix between source and destination points. |
 | `nearest` | Snap a single point to the nearest road segment. |
-| `match` | Map-match a noisy GPS trace. |
+| `match` | Map-match a noisy GPS trace (semicolon-separated lon,lat pairs) to the road network via OSRM, optionally specifying per-point search radiuses in meters; returns matched route geometry and confidence. |
 | `trip` | Solve a TSP-like trip between multiple waypoints. |
 
 ## Quick Start
@@ -28,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 965+ data sources:
 
 ```json
 {

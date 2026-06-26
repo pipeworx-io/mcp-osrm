@@ -81,7 +81,7 @@ const tools: McpToolExport['tools'] = [
   },
   {
     name: 'match',
-    description: 'Map-match a noisy GPS trace.',
+    description: 'Map-match a noisy GPS trace (semicolon-separated lon,lat pairs) to the road network via OSRM, optionally specifying per-point search radiuses in meters; returns matched route geometry and confidence.',
     inputSchema: {
       type: 'object',
       properties: {
