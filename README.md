@@ -1,18 +1,24 @@
-# mcp-osrm
+# @pipeworx/osrm
 
-OSRM MCP — routing via the public demo server
+OSRM (Open Source Routing Machine) MCP — routing, distance matrix, and snap-to-road via the public demo server. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `route` | Compute the fastest route between two or more waypoints. |
-| `table` | Distance / duration matrix between source and destination points. |
-| `nearest` | Snap a single point to the nearest road segment. |
-| `match` | Map-match a noisy GPS trace (semicolon-separated lon,lat pairs) to the road network via OSRM, optionally specifying per-point search radiuses in meters; returns matched route geometry and confidence. |
-| `trip` | Solve a TSP-like trip between multiple waypoints. |
+- `route(coordinates, profile?, overview?, alternatives?, steps?, annotations?)` — fastest route between waypoints
+- `table(coordinates, profile?, sources?, destinations?, annotations?)` — distance/duration matrix
+- `nearest(longitude, latitude, profile?, number?)` — snap a point to the road network
+- `match(coordinates, profile?, radiuses?)` — map-match a noisy GPS trace
+- `trip(coordinates, profile?, roundtrip?, source?, destination?)` — solve a TSP-style trip
+
+## Profiles
+
+`car` (default), `bike`, `foot` — all available on the public demo. Switch hosts for custom OSRM instances.
+
+## Data source
+
+`https://router.project-osrm.org/` — public demo server. Fair-use only; for production load run your own OSRM instance.
 
 ## Quick Start
 
@@ -28,7 +34,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 965+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +58,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
