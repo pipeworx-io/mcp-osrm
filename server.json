@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/osrm",
   "title": "Osrm",
   "description": "OSRM MCP — routing via the public demo server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/osrm",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-osrm",
