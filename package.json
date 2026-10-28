@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-osrm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "OSRM MCP — routing via the public demo server",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-5e6f3e1b7007e877f42aef41443470c17f7c5bbf6f6f43024b560b85f0237197",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "sourceHash": "v1-94e05f59f9793d9ae3ce0a5d8800223fe9203f4d096d14f07251c18f6bcd18c6",
+    "sourceCommit": "f54ad77e789f27fe393978f9c080b5b18c87bb4f"
   }
 }
