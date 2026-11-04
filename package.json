@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-osrm",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OSRM MCP — routing via the public demo server",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "osrm",
     "gatewaySlug": "osrm",
-    "sourceHash": "v1-81f58c378e66ee35201e234d3ffa174805e0f457002b8b2aa958fa73496278e9",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-0d9368366c8f667953287d44f65566490f15db5a717ab4c5e69a0bbad1e54dfc",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
